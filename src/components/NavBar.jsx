@@ -18,7 +18,7 @@ const NavBar = () => {
         href="/Marketing-Website/"
         className="lg:text-3xl text-2xl tracking-wide font-light text-[#7A6960]"
       >
-        BrandName
+        Promofy
       </a>
       {/* menu */}
       <div className="lg:flex items-center justify-between lg:gap-14 hidden">

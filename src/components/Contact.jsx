@@ -3,22 +3,62 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 import CtaButton from "./CtaButton";
+import { useState } from "react";
+import axios from "axios";
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 // React Form
-import { useForm } from "react-hook-form";
-import { toast } from "react-toastify";
+
 
 const Contact = () => {
-  const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data, e) => {
-    console.log(data);
-    toast.success("Message sent Successfully");
-    e.target.reset();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const service_id = "service_buddpdh";
+    const template_id = "template_99j6fc8";
+    const publicKey = "n0KtA3IgvYT1pRPLG";
+
+
+console.log("hii")
+console.log(name)
+    const data = {
+      service_id: service_id,
+      template_id: template_id,
+      user_id: publicKey,
+      template_params: {
+        from_name: name,
+        from_email: email,
+        subject:subject,
+        to_name: "Promofy",
+        message: message,
+      },
+    };
+
+    try {
+      const res = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
+      console.log(res.data);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSubject("")
+    } catch (e) {
+      console.log(e);
+      console.log("hiiii")
+    }
   };
+ 
 
   useEffect(() => {
     AOS.init({
@@ -56,7 +96,7 @@ const Contact = () => {
                 Address
               </h2>
               <p className="text-sm text-slate-800">
-                A108 Adam Street, New York, NY 535022
+                Shrinath Puram near GAD circle kota 324010
               </p>
             </div>
           </div>
@@ -72,7 +112,7 @@ const Contact = () => {
               <h2 className="lg:text-xl text-[#7A6960] font-semibold">
                 Call Us
               </h2>
-              <p className="text-sm text-slate-800">+1 5589 55488 55</p>
+              <p className="text-sm text-slate-800">+91 8000827730</p>
             </div>
           </div>
 
@@ -87,7 +127,7 @@ const Contact = () => {
               <h2 className="lg:text-xl text-[#7A6960] font-semibold">
                 Email Us
               </h2>
-              <p className="text-sm text-slate-800">info@example.com</p>
+              <p className="text-sm text-slate-800">promofy.pvt@gmail.com</p>
             </div>
           </div>
 
@@ -95,12 +135,14 @@ const Contact = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14010.76256980872!2d77.22260515427726!3d28.60905606083753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7ef5ee6dd10ae!2sIndia%20Gate%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1717776828829!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4893.55324712992!2d75.81483460112926!3d25.13789407722568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f859ad23b01eb%3A0x800ae38b92772219!2sVeerangna%20Haadi%20Rani%20Circle!5e1!3m2!1sen!2sin!4v1737057244589!5m2!1sen!2sin"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+            
           </div>
         </div>
+     
 
         {/* form */}
         <div
@@ -108,18 +150,23 @@ const Contact = () => {
           data-aos-duration="1600"
           className="lg:w-[60%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-orange-600"
         >
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <div >
             <div className="md:flex gap-6">
               <div className="md:w-[50%]">
                 <div>
                   <label htmlFor="name">Name</label>
                   <input
-                    {...register("name", { required: true })}
+                  value={name}
+                  onChange={(e)=>{
+                    setName(e.target.value)
+                  }}
+                 
                     type="text"
                     id="name"
                     placeholder="John Doe"
                     className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
                   />
+                  
                 </div>
               </div>
 
@@ -127,12 +174,16 @@ const Contact = () => {
                 <div>
                   <label htmlFor="email">Your Email</label>
                   <input
-                    {...register("email", { required: true })}
+                   onChange={(e)=>{
+                    setEmail(e.target.value)
+                  }}
+                    
                     type="email"
                     id="email"
                     placeholder="johndoe@gmail.com"
                     className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
                   />
+                  {email}
                 </div>
               </div>
             </div>
@@ -140,28 +191,38 @@ const Contact = () => {
             <div>
               <label htmlFor="subject">Subject</label>
               <input
-                {...register("subject", { required: true })}
+               onChange={(e)=>{
+                setSubject(e.target.value)
+              }}
+             
                 type="text"
                 id="subject"
                 placeholder="Your subject"
                 className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
               />
+              {subject}
             </div>
 
             <div>
               <label htmlFor="message">Message</label>
               <textarea
-                {...register("message", { required: true })}
+               onChange={(e)=>{
+                setMessage(e.target.value)
+              }}
+                
                 id="message"
                 placeholder="Enter your message"
                 className="w-full h-60 p-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none resize-none"
-              ></textarea>
+              >  </textarea>
+              {message}
             </div>
 
             <div className="flex justify-center m-3">
-              <CtaButton name={"Send Message"} />
+            <button onClick={handleSubmit} className="bg-orange-600 hover:bg-orange-500 hover:shadow hover:shadow-orange-500 text-lg text-slate-50 rounded-3xl px-4 py-2 w-fit transition-all duration-300">
+      Send Message
+    </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>

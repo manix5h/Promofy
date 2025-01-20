@@ -30,18 +30,14 @@ const Home = () => {
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
         <FreqAskedQues />
       </section>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
-        <Team />
-      </section>
+      
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
         <Clients />
       </section>
       <section id="contact" className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
         <Contact />
       </section>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
-        <Newsletter />
-      </section>
+      
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
         <Footer />
       </section>

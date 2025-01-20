@@ -26,49 +26,48 @@ const Services = () => {
         <div className="bg-orange-600 h-1 w-16 rounded"></div>
       </div>
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
-        Choose from live online courses, classroom training, or self-paced
-        online programs.
+      "Capture Attention, Create Engagement, and Grow Your Brand on Instagram"
       </p>
       <div
         className="flex flex-col lg:flex-row items-center gap-5"
         data-aos="fade-up"
       >
-        <div onClick={() => navigate("/app-development")}>
+        <div >
           <Card
             img={<HiOutlineChartPie />}
-            title={"Apps Development"}
+            title={"Creative Reels and Stories Content Creation"}
             desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
+              "Eye-catching visuals and engaging short-form video content "  }
+              
+      />
+        </div>
+
+        <div >
+          <Card
+            img={<HiOutlineChartPie />}
+            title={"Brand Storytelling and Product Showcasing"}
+            desc={
+              "Authentic storytelling to build emotional connections with your audience."
             }
           />
         </div>
 
-        <div onClick={() => navigate("/web-development")}>
+        <div >
           <Card
             img={<HiOutlineChartPie />}
-            title={"Web Development"}
+            title={"Paid Promotion and Ad Management"}
             desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
+              "Reels and Stories ads with precise audience targeting for higher engagement."
             }
           />
         </div>
 
-        <div onClick={() => navigate("/seo-optimization")}>
+        <div >
           <Card
             img={<HiOutlineChartPie />}
-            title={"Search Engine Optimization"}
+            title={"Influencer and Collaborative Promotions"}
             desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
-            }
-          />
-        </div>
-
-        <div onClick={() => navigate("/campagin-creation")}>
-          <Card
-            img={<HiOutlineChartPie />}
-            title={"Campaign Creation"}
-            desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
+              "Partnering with niche influencers to expand your audience and credibility."
             }
           />
         </div>

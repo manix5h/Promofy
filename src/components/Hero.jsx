@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import CtaButton from "./CtaButton";
 import VideoBtn from "./VideoBtn";
-import img from "../img/hero-img.svg";
+import img from "../img/hero2.png";
 
 // aos
 import AOS from "aos";
@@ -51,17 +51,26 @@ const Hero = () => {
         className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0"
       >
         <h1 className="text-[#7A6960] md:text-5xl text-3xl font-semibold">
-          Fueling Skills, Igniting Careers
+        "Transform Your Business with Strategic Marketing Solutions"
         </h1>
         <p className="text-xl mt-5 text-gray-600 primary-font">
-          Master industry-relevant skills with our vernacular online courses.
-          Choose your program, get certified, & open doors to lucrative career
-          opportunities.
+        
+       
+
+"Creative, data-driven marketing strategies that deliver real results and boost your brand’s growth."
         </p>
         <div className="flex flex-col sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
           <a href="#contact" className="">
             <CtaButton name={"Get Started"} />
+            
           </a>
+          <div>
+            <a href="https://docs.google.com/presentation/d/1OYrPVPBEC0nOfo0xQMaDE3JSI8eBHeH_/edit?usp=sharing&ouid=102370787339297177050&rtpof=true&sd=true">
+            <button className="bg-orange-600 hover:bg-orange-500 hover:shadow hover:shadow-orange-500 text-lg text-slate-50 rounded-3xl px-4 py-2 w-fit transition-all duration-300" >
+              Download brochure
+            </button>
+            </a>
+          </div>
           {/* <div
             onClick={() => videoStartHandler()}
             className="shadow shadow-zinc-300 hover:shadow-orange-600 hover:shadow px-4 py-2 rounded-3xl"

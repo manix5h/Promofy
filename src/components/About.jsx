@@ -55,34 +55,13 @@ const About = () => {
         <div className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0">
           <div data-aos="fade-left">
             <h1 className="text-[#7A6960] md:text-3xl font-semibold">
-              Upskilling Edtech
+            "Your Trusted Partner for Strategic Growth"
+
+
             </h1>
-            <p className="text-lg mt-5 text-gray-600 primary-font">
-              Edtech platform offering expert mentorship with our tech-powered
-              courses in various languages of India.
-            </p>
+           
           </div>
 
-          {/* 1st template */}
-          <div
-            data-aos="zoom-in"
-            className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
-          >
-            <div
-              className="bg-orange-600 w-fit p-2 md:p-5 rounded"
-              style={{ color: "white" }}
-            >
-              <BsPeople size={"28px"} />
-            </div>
-            <div className="w-full">
-              <h2 className="text-[#7A6960] text-xl font-medium">
-                The Vernacular Upskilling Edtech
-              </h2>
-              <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
-                Explore Our Courses | Bharat ka Career Launchpad
-              </p>
-            </div>
-          </div>
 
           {/* 2nd template */}
           <div
@@ -97,10 +76,10 @@ const About = () => {
             </div>
             <div className="w-full">
               <h2 className="text-[#7A6960] text-xl font-medium">
-                Build Your Career, Your Way
+              "Let's Grow Your Business"
               </h2>
               <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
-                Our Learners Work at Global Companies & Startups
+              Get in touch to explore how we can elevate your marketing strategy.
               </p>
             </div>
           </div>
@@ -110,9 +89,7 @@ const About = () => {
             data-aos="zoom-in"
             className="text-lg mt-5 text-gray-600 primary-font"
           >
-            Master industry-relevant skills with our vernacular online courses.
-            Choose your program, get certified, and open doors to lucrative
-            career opportunities.
+            To empower businesses with innovative marketing strategies that maximize growth, strengthen brand identity, and build lasting connections with their audience.
           </p>
           <div className="flex flex-col justify-center sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
             <div>

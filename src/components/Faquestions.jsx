@@ -5,21 +5,21 @@ const Faquestions = () => {
   return (
     // <div className="grid md:grid-cols-2 gap-x-10 md:gap-y-5 gap-y-3 mx-5 lg:mx-0">
     <>
-      <div className="md:flex w-full md:gap-5 mb-5">
+      <div className="md:flex w-full md:gap-5 mb-5 p-6">
         <div className="md:w-1/2 mb-2 md:mb-0">
         <Accordian
-          question={"Top 108 SEO Interview Questions and Answers"}
+          question={"Why should I promote my brand on Instagram Reels and Stories?"}
           answer={
-            "Well-curated basic to advanced interview questions on SEO, categorized into freshers and experienced professionals. Also, find tips to fast-track a career in SEO."
+            "Instagram Reels and Stories offer high engagement rates, viral potential, and an opportunity to connect with your audience through short-form, dynamic content that drives brand awareness and conversions."
           }
         />
         </div>
 
         <div className="md:w-1/2">
         <Accordian
-          question={"Top 55 JavaScript Interview Questions and Answers"}
+          question={"How can Instagram Reels help grow my brand?"}
           answer={
-            "The most detailed and well-structured set of interview questions on JavaScript for Freshers and experienced professionals in the field of web development."
+            "TReels utilize Instagram’s algorithm to prioritize entertaining and informative content. When done right, your brand can gain massive exposure, build a larger following, and increase customer engagement."
           }
         />
         </div>
@@ -28,18 +28,18 @@ const Faquestions = () => {
       <div className="md:flex w-full md:gap-5 mb-5">
         <div className="md:w-1/2 mb-2 md:mb-0">
         <Accordian
-          question={"Top 60 NodeJS Interview Questions and Answers"}
+          question={"What type of content works best for Reels and Stories?"}
           answer={
-            "A list of top NodeJS interview questions and answers for both freshers & experienced candidates to prepare and boost chances of selection."
+            "Content that’s creative, authentic, and aligned with current trends typically performs well. Product demos, behind-the-scenes looks, customer testimonials, and engaging storytelling are great examples."
           }
         />
         </div>
 
         <div className="md:w-1/2">
         <Accordian
-          question={"Top 49 Data Structures Interview Questions 2024"}
+          question={"Do you offer content creation services for Reels and Stories?"}
           answer={
-            "Data structures have become integral to every field and business. They are the building blocks of any computer program, making organising..."
+            "Yes! We provide end-to-end content creation, including scripting, filming, editing, and adding trendy effects and music to ensure your brand stands out."
           }
         />
         </div>
@@ -48,18 +48,61 @@ const Faquestions = () => {
       <div className="md:flex w-full md:gap-5 mb-5">
         <div className="md:w-1/2 mb-2 md:mb-0 ">
         <Accordian
-          question={"Top 55 Flutter Interview Questions and Answers 2024"}
+          question={"How do you measure the success of Reels and Stories campaigns?"}
           answer={
-            "Flutter has been gaining immense popularity in recent times, and for a good reason. It is a powerful open-source mobile app development framework created by Google."
+            "We track key performance metrics like reach, engagement rate, views, click-through rates, and conversion data to evaluate and optimize each campaign.."
           }
         />
         </div>
 
         <div className="md:w-1/2">
         <Accordian
-          question={"Top 28 Java 8 Interview Questions and Answers 2024"}
+          question={"Can Reels and Stories be used for paid advertising?"}
           answer={
-            "Java is a widely used programming language for various types of development projects, from the web and Android apps to the Internet of Things (IoT). "
+            "Absolutely. Instagram offers Reels Ads and Stories Ads, allowing you to reach a highly targeted audience. We design and manage ad campaigns to maximize ROI."
+          }
+        />
+        </div>
+
+       
+
+     
+      </div>
+      <div className="md:flex w-full md:gap-5 mb-5">
+      <div className="md:w-1/2">
+        <Accordian
+          question={"Will you help with influencer collaborations?"}
+          answer={
+            "Yes, we identify, vet, and collaborate with influencers who align with your brand to boost credibility and reach"
+          }
+        />
+        </div>
+
+        <div className="md:w-1/2">
+        <Accordian
+          question={"What kind of businesses benefit from Reels and Stories promotion?"}
+          answer={
+            "Any business looking to enhance brand visibility, increase engagement, or boost conversions can benefit—from startups to established companies in various industries.."
+          }
+        />
+        </div>
+      </div>
+
+      <div className="md:flex w-full md:gap-5 mb-5">
+      <div className="md:w-1/2">
+        <Accordian
+          question={"Can Reels and Stories be used for paid advertising?"}
+          answer={
+            "Absolutely. Instagram offers Reels Ads and Stories Ads, allowing you to reach a highly targeted audience. We design and manage ad campaigns to maximize ROI."
+          }
+        />
+        </div>
+
+        <div className="md:w-1/2">
+        <Accordian
+          question={"What budget is recommended for Instagram promotion?"}
+          answer={
+            "The budget varies depending on your goals, audience size, and campaign complexity. We offer flexible packages to suit different needs and provide guidance on effective spending."
           }
         />
         </div>
