@@ -23,12 +23,12 @@ const Footer = () => {
       <div className="md:grid grid-cols-4 p-5 md:p-0">
       <div data-aos="fade-right" >
         <h1 className="text-xl font-light mb-3">Promofy</h1>
-        <p className="mb-1">Shrinath Puram, Kota</p>
-        <p className="mb-5">Rajasthan 324010</p>
+        <p className="mb-1">Shastri Nagar </p>
+        <p className="mb-5">Jaipur, Rajasthan 302016</p>
 
         <div>
           <p className="font-medium">
-            Phone: <span className="font-normal ml-1">+91 8000827730</span>
+            Phone: <span className="font-normal ml-1">+91 9783724372</span>
           </p>
           <p className="font-medium">
             Email: <span className="font-normal ml-1">promofy.pvt@gmail.com</span>

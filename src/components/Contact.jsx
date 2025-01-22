@@ -96,7 +96,7 @@ console.log(name)
                 Address
               </h2>
               <p className="text-sm text-slate-800">
-                Shrinath Puram near GAD circle kota 324010
+              Shastri Nagar, Jaipur, Rajsathan 302016
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ console.log(name)
               <h2 className="lg:text-xl text-[#7A6960] font-semibold">
                 Call Us
               </h2>
-              <p className="text-sm text-slate-800">+91 8000827730</p>
+              <p className="text-sm text-slate-800">+91 9783724372</p>
             </div>
           </div>
 
@@ -135,8 +135,7 @@ console.log(name)
             <iframe
               width="100%"
               height="100%"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4893.55324712992!2d75.81483460112926!3d25.13789407722568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f859ad23b01eb%3A0x800ae38b92772219!2sVeerangna%20Haadi%20Rani%20Circle!5e1!3m2!1sen!2sin!4v1737057244589!5m2!1sen!2sin"
-              loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14997.447787690307!2d75.79365760309075!3d26.948870570662486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3dc0a774a75%3A0xf7dbda973d65d18f!2sShastri%20Nagar%2C%20Jaipur%2C%20Rajasthan!5e1!3m2!1sen!2sin!4v1737568582302!5m2!1sen!2sin"             loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             
@@ -230,3 +229,6 @@ console.log(name)
 };
 
 export default Contact;
+
+
+

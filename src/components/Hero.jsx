@@ -55,7 +55,7 @@ const Hero = () => {
         </h1>
         <p className="text-xl mt-5 text-gray-600 primary-font">
         
-       
+        
 
 "Creative, data-driven marketing strategies that deliver real results and boost your brand’s growth."
         </p>
@@ -65,7 +65,7 @@ const Hero = () => {
             
           </a>
           <div>
-            <a href="https://docs.google.com/presentation/d/1OYrPVPBEC0nOfo0xQMaDE3JSI8eBHeH_/edit?usp=sharing&ouid=102370787339297177050&rtpof=true&sd=true">
+            <a href="https://docs.google.com/presentation/d/19yTDhU3WeKjAamL713ewlhoRUstujRBp/edit?usp=sharing&ouid=102370787339297177050&rtpof=true&sd=true">
             <button className="bg-orange-600 hover:bg-orange-500 hover:shadow hover:shadow-orange-500 text-lg text-slate-50 rounded-3xl px-4 py-2 w-fit transition-all duration-300" >
               Download brochure
             </button>
@@ -92,6 +92,7 @@ const Hero = () => {
         </div>
         <video id="video" muted controls autoPlay className="w-[800px] rounded" src={video}></video>
       </div> */}
+      
     </div>
   );
 };
