@@ -23,32 +23,32 @@ const NavBar = () => {
       {/* menu */}
       <div className="lg:flex items-center justify-between lg:gap-14 hidden">
         <a
-          href="/Marketing-Website/"
+          href="/"
           className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
         >
           Home
         </a>
         <a
-          href="/Marketing-Website/#about"
+          href="/#about"
           className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
         >
           About
         </a>
         <a
-          href="/Marketing-Website/#services"
+          href="/#services"
           className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
         >
           Services
         </a>
         <a
-          href="/Marketing-Website/#portfolio"
+          href="/#portfolio"
           className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
         >
           Portfolio
         </a>
 
         <a
-          href="/Marketing-Website/#contact"
+          href="/#contact"
           className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
         >
           Contact
@@ -58,7 +58,7 @@ const NavBar = () => {
         {/* <button className="bg-orange-600 text-lg text-slate-50 rounded-3xl px-4 py-1">
           Get Strated
         </button> */}
-        <a href="/Marketing-Website/#contact" className="">
+        <a href="/#contact" className="">
           <CtaButton name={"Get Started"} />
         </a>
       </div>
@@ -71,25 +71,25 @@ const NavBar = () => {
       {show && (
         <div className="absolute z-20 top-[70px] flex flex-col gap-4 text-center w-full left-0 p-5 lg:hidden shadow-xl bg-white transition-all duration-300">
           <a
-            href="/Marketing-Website/"
+            href="/"
             className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
           >
             Home
           </a>
           <a
-            href="/Marketing-Website/#about"
+            href="/#about"
             className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
           >
             About
           </a>
           <a
-            href="/Marketing-Website/#services"
+            href="/#services"
             className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
           >
             Services
           </a>
           <a
-            href="/Marketing-Website/#contact"
+            href="/#contact"
             className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
           >
             Contact
@@ -97,7 +97,7 @@ const NavBar = () => {
 
           {/* CTA */}
           <a
-            href="/Marketing-Website/#contact"
+            href="/#contact"
             className="mt-2 ml-2 flex justify-center items-center"
           >
             <CtaButton name={"Get Started"} />
